@@ -1,0 +1,6 @@
+timezone: Asia/Makassar
+
+paginate: 10
+
+plugins:
+  - jekyll-paginate

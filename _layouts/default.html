@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}Blog Ayat dan Hadits</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/app/style.css">
+	<!-- <link rel="alternate" type="application/rss+xml" title="Zen" href="https://www.muhammadzaini.com/feed" /> -->
+	<!-- <link rel="icon" href="/favicon.ico"> -->
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<center>
+				<h1>Blog Hadits dan Ayat</h1>
+				<p>ولقد يسرنا القرآن للذكر فهل من مدكر</p>
+			</center>
+		</div>
+		<div class="row">
+			<div class="col-sm-8 theia">
+				<div class="theiaStickySidebar">
+					{{ content }}
+				</div>
+			</div>
+			<div class="col-sm-4 theia">
+				<div class="theiaStickySidebar">
+					{% include sidebar.html %}
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="/vendor/fixed/ResizeSensor.min.js"></script>
+	<script type="text/javascript" src="/vendor/fixed/theia-sticky-sidebar.min.js"></script>
+	<script type="text/javascript" src="/app/data_cari.js"></script>
+	<script type="text/javascript" src="/app/cari.js"></script>
+	<script type="text/javascript" src="/app/app.js"></script>
+</body>
+</html>

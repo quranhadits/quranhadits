@@ -1,0 +1,10 @@
+.arab {
+	direction: rtl;
+	font-size: 21px;
+	font-weight: 200;
+}
+
+.jumbotron {
+	background-color: transparent;
+	cursor: pointer;
+}
